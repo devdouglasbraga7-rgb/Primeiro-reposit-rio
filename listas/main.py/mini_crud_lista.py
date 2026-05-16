@@ -19,7 +19,7 @@ while loop == 0:
         clientes = input("Digite o nome do cliente: ")
         cadastro.append(clientes)
         print(f"Esse aqui é o  cadastro do cliente: {clientes}")
-    if escolha == 2:
+    elif escolha == 2:
         for i, nome in enumerate(cadastro, start=1):
             print(i, "-" , nome)
         opcao = int(input("Escolha a opção: "))
@@ -29,10 +29,10 @@ while loop == 0:
 
         for nome in cadastro:
             print("-", nome)
-    if escolha == 3:
+    elif escolha == 3:
         for i, nome in enumerate(cadastro, start=1):
             print(i, "-",nome)
-    if escolha == 4:
+    else:
         for nome in cadastro:
             print("-", nome)
         opcao = input("Digite a opção que deseja excluir: ")
