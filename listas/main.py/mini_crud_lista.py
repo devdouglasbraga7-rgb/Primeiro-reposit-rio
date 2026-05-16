@@ -33,13 +33,13 @@ while loop == 0:
         for i, nome in enumerate(cadastro, start=1):
             print(i, "-",nome)
     else:
-        for nome in cadastro:
-            print("-", nome)
-        opcao = input("Digite a opção que deseja excluir: ")
+        for i, nome in enumerate(cadastro, start=1):
+            print(i, "-", nome)
+        opcao = int(input("Digite a opção que deseja excluir: "))
         
-        cadastro.remove(opcao)
-        for nome in cadastro:
-            print("-", nome)
+        cadastro.pop(opcao - 1)
+        for i, nome in enumerate(cadastro, start=1):
+            print(i, "-", nome)
 
  #Percorre a escolha do usuário           
 
